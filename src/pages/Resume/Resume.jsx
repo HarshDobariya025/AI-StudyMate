@@ -12,7 +12,7 @@ import "./Resume.css"
 
 export default function Resume() {
   const [darkMode, setDarkMode] = useState(true)
-  const [showPreview, setShowPreview] = useState(false)
+  const [showPreview, setShowPreview] = useState(true)
   const [currentStep, setCurrentStep] = useState(0)
   const [resumeData, setResumeData] = useState({
     personalInfo: {

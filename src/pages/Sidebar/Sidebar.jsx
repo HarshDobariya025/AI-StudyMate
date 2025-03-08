@@ -59,10 +59,12 @@ const Sidebar = () => {
             {extended ? <p>Scholarship</p> : null}
           </div>
         </NavLink>
-        <div className="bottom-item recent-entry">
-          <ContactPageIcon />
-          {extended ? <p>Resume</p> : null}
-        </div>
+        <NavLink to="/resume">
+          <div className="bottom-item recent-entry">
+            <ContactPageIcon />
+            {extended ? <p>Resume</p> : null}
+          </div>
+        </NavLink>
 
             {extended ? (
           <div className="recent">
