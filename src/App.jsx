@@ -8,6 +8,7 @@ import StudentAIAssistant from './pages/Home/home'
 import Courses from './pages/Courses/Courses'
 import Profile from './pages/profile'
 import Profile2 from './pages/profile2'
+import Resume from './pages/Resume/Resume'
 
 const App = () => {
   const { isSignedIn } = useUser();
@@ -22,6 +23,7 @@ const App = () => {
         {isSignedIn? <Route path="/" element={<Main />} /> : <Route path="/" element={<StudentAIAssistant />} />}
         <Route path="/courses" element={<Courses />} />
         <Route path="/profile" element={<Profile2/>} />
+        <Route path="/resume" element={<Resume/>} />
       </Routes>
     </>
   )
