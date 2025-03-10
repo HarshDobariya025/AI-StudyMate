@@ -102,7 +102,9 @@ export default function CourseModal({ course, onClose }) {
 
         <div className="modal-buttons">
           <button className="close-btn" onClick={onClose}>Close</button>
-          <button className="apply-btn">Learn</button>
+          <a href={course.link} target="_blank" rel="noopener noreferrer">
+            <button className="apply-btn">Learn Now</button>
+          </a>
         </div>
       </div>
     </div>

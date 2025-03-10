@@ -41,7 +41,7 @@ const Sidebar = () => {
             {extended ? <p>Home</p> : null}
           </div>
         </NavLink>
-        <NavLink to="/profile">
+        <NavLink to="/profile"> 
           <div className="bottom-item recent-entry">
             <PersonRoundedIcon />
             {extended ? <p>Account</p> : null}

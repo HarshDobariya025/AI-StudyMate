@@ -11,7 +11,7 @@ export default function Courses() {
           <h2 className="courses-title">Explore Technical Courses</h2>
           <CourseList />
         </div>
-      </main> 
+      </main>  
     </RootLayout>
   );
 }

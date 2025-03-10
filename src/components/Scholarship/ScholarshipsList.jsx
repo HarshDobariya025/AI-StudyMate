@@ -6,6 +6,7 @@ import ScholarshipCard from "./ScholarshipCard"
 import SearchFilter from "./SearchFilter"
 import "./ScholarshipsList.css"
 
+
 const ScholarshipsList = () => {
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("all")
@@ -42,7 +43,7 @@ const ScholarshipsList = () => {
         selectedAmount={selectedAmount}
         setSelectedAmount={setSelectedAmount}
       />
-
+  
       {filteredScholarships.length > 0 ? (
         <div className="scholarships-grid">
           {filteredScholarships.map((scholarship) => (

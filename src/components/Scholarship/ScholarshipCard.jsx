@@ -75,9 +75,11 @@ const ScholarshipCard = ({ scholarship }) => {
         </ul>
       </div>
 
-      <div className="scholarship-footer">
-        <button className="apply-button">Apply Now</button>
+      <div className="scholarship-footer flex justify-between">
         <button className="save-button">Save</button>
+        <a href={scholarship.link} target="_blank" >
+        <button className="apply-button">Apply Now</button>
+        </a>
       </div>
     </div>
   )

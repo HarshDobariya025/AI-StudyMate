@@ -4,7 +4,7 @@ import { Filter } from "lucide-react";
 import CourseCard from "./CourseCard";
 import CourseModal from "./CourseModal";
 import "./CourseList.css";
-
+  
 // Sample course data
 const courses = [
   {
@@ -24,6 +24,7 @@ const courses = [
       "Authentication & Authorization",
       "Deployment & DevOps Basics",
     ],
+    link:"https://lp.pwskills.com/Full-Stack-Web-Development-Version2-B?utm_source=google&utm_medium=cpc&utm_campaign=HR-Skills-Full-Stack-WOTP-India-Google-Lead-Search-CPL-Keyword-13-Jan-2024&utm_keyword=full%20stack%20web%20development%20course&utm_adgroupid={adgroupname}&utm_matchtype=p&device=c&gad_source=1&gclid=Cj0KCQjwm7q-BhDRARIsACD6-fUWa4A9jH8ZPf1QDuOaORUTcP-t8DsRGkX5zBL2ZO8EfssNEPTR54QaAk0PEALw_wcB",
     careers: ["Full Stack Developer", "Front-End Developer", "Back-End Developer", "Web Application Developer"],
     image: "https://www.shutterstock.com/image-vector/full-stack-developer-programmer-who-260nw-2273927175.jpg",
   },
@@ -45,6 +46,7 @@ const courses = [
       "Big Data Technologies",
       "Model Deployment",
     ],
+    link:"https://www.scaler.com/event/learn-data-science-machine-learning/?utm_source=ads&utm_medium=googlesearch&utm_campaign=perf_scaler-dsml_requestcallback_ads_googlesearch_dsa-new_key-metros_25-45&utm_content=dsa-data-science-new&utm_term=&param1=693360064288&param2=c&param3=&gad_source=1&gclid=Cj0KCQjwm7q-BhDRARIsACD6-fUcD2JZX8-3POreYaeIqkxdiPbC4U7P4AhkPkHDC5iHcZBD91wfapwaAl0AEALw_wcB",
     careers: ["Data Scientist", "Machine Learning Engineer", "Data Analyst", "AI Specialist"],
     image: "https://cdn.builtin.com/cdn-cgi/image/f=auto,fit=cover,w=1200,h=635,q=80/https://builtin.com/sites/www.builtin.com/files/2024-10/data-science.jpg",
   },
@@ -65,6 +67,7 @@ const courses = [
       "App Testing & Debugging",
       "App Store Deployment",
     ],
+    link:"https://www.udemy.com/courses/development/mobile-apps/?srsltid=AfmBOop6fOc1FKLTIUFuIpzcyn-2uwSKyFdQHoYqiJsbKHA-tUqjNKu1",
     careers: ["Mobile App Developer", "React Native Developer", "UI/UX Designer", "Cross-Platform Developer"],
     image: "https://t3.ftcdn.net/jpg/06/51/77/96/360_F_651779668_RtIuIZwT2J248KpR1H5eIs3J8yOGd4mC.jpg",
   },
@@ -85,6 +88,7 @@ const courses = [
       "Monitoring & Logging",
       "Security Best Practices",
     ],
+    link:"https://www.simplilearn.com/professional-certificate-program-cloud-computing-devops",
     careers: ["DevOps Engineer", "Cloud Architect", "Site Reliability Engineer", "Infrastructure Engineer"],
     image: "https://media.istockphoto.com/id/1398516315/vector/devsecops-concept-integration-of-security-testing-throughout-the-development-and-operations.jpg?s=612x612&w=0&k=20&c=JV-bF57yE-lCmEWVBEgchwDJ_ciSO_VKpBxwx0i94z4=",
   },
@@ -106,6 +110,7 @@ const courses = [
       "Digital Forensics",
       "Security Compliance",
     ],
+    link:"https://www.coursera.org/learn/cyber-security-fundamentals",
     careers: ["Security Analyst", "Ethical Hacker", "Security Consultant", "Cybersecurity Specialist"],
     image: "https://t4.ftcdn.net/jpg/02/45/63/69/360_F_245636933_kY23ohGptK5t6n8wGSXIgLgVXWeHJRct.jpg",
   },
@@ -126,6 +131,7 @@ const courses = [
       "Usability Testing",
       "Design Systems",
     ],
+    link:"https://www.coursera.org/specializations/ui-ux-design",
     careers: ["UI Designer", "UX Designer", "Product Designer", "Interaction Designer"],
     image: "https://img.freepik.com/free-vector/gradient-ui-ux-landing-page-template_23-2149053801.jpg",
   },
@@ -146,6 +152,7 @@ const courses = [
       "AI Model Optimization",
       "Ethics & AI Governance"
     ],
+    link:"https://www.deeplearning.ai/",
     careers: ["AI Engineer", "Deep Learning Engineer", "Computer Vision Specialist", "NLP Engineer"],
     image: "https://cdn.pixabay.com/photo/2024/01/29/22/47/ai-generated-8540920_640.jpg"
   },
@@ -166,6 +173,7 @@ const courses = [
       "Hyperledger & Enterprise Blockchain",
       "Security in Blockchain"
     ],
+    link:"https://www.coursera.org/courses?query=blockchain",
     careers: ["Blockchain Developer", "Smart Contract Developer", "Decentralized Application (DApp) Developer", "Crypto Analyst"],
     image: "https://img.freepik.com/free-vector/vector-blockchain-poster_1441-1999.jpghttps://img.freepik.com/free-vector/blockchain-technology-security-template-vector-data-payment-securing-blog-banner_53876-112174.jpghttps://img.freepik.com/premium-vector/vector-blockchain-round-concept-colorful-line-illustration_104589-4543.jpg?semt=ais_hybrid"
   },
@@ -186,6 +194,7 @@ const courses = [
       "IoT Security",
       "Building Scalable IoT Solutions"
     ],
+    link:"https://www.coursera.org/courses?query=iot",
     careers: ["IoT Developer", "Embedded Systems Engineer", "IoT Security Analyst", "IoT Solutions Architect"],
     image: "https://static.vecteezy.com/system/resources/thumbnails/009/288/681/small_2x/iot-internet-of-things-logo-in-the-shape-of-sphere-with-hexagon-pattern-in-wireframe-hand-everything-connectivity-device-concept-network-and-business-with-internet-illustration-vector.jpg"
   },
@@ -206,6 +215,7 @@ const courses = [
       "Game AI & Procedural Generation",
       "Publishing & Monetization"
     ],
+    link:"https://www.tcsion.com/courses/ve/multimedia/unity-game-development-certification-course/",
     careers: ["Game Developer", "Unity Developer", "Game Designer", "VR/AR Developer"],
     image: "https://res.cloudinary.com/upwork-cloud/image/upload/c_scale,w_1000/v1711571024/catalog/1773075245199159296/ci5lrulmjqp1evhd9bdr.jpg"
   },
@@ -226,6 +236,7 @@ const courses = [
       "Human-Robot Interaction",
       "Robotic Process Automation (RPA)"
     ],
+    link:"https://www.mooc.e-yantra.org/embedded_elsi",
     careers: ["Robotics Engineer", "Embedded Systems Developer", "Automation Engineer", "Mechatronics Engineer"],
     image: "https://thumbs.dreamstime.com/b/robot-manipulator-smart-farming-technology-robotic-agriculture-decoration-wallpaper-desktop-poster-booklet-cover-printing-296884565.jpg"
   },
@@ -246,6 +257,7 @@ const courses = [
       "CI/CD in Test Automation",
       "Security & Penetration Testing"
     ],
+    link:"https://www.coursera.org/specializations/software-testing-automation",
     careers: ["QA Engineer", "Test Automation Engineer", "Software Tester", "Security Tester"],
     image: "https://t3.ftcdn.net/jpg/01/36/51/44/360_F_136514488_j1u863gh50fsRqIFQDHIn1HW7JeHPJVz.jpg"
   }

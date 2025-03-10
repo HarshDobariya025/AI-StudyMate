@@ -13,6 +13,7 @@ export const scholarshipsData = [
         "Demonstrated interest in engineering through projects or activities",
         "U.S. citizen or permanent resident",
       ],
+      link:"https://www.buddy4study.com/page/amazon-future-engineer-scholarship",
     },
     {
       id: 2,
@@ -28,10 +29,11 @@ export const scholarshipsData = [
         "Demonstrated leadership potential",
         "Commitment to supporting diversity in tech",
       ],
+      link:"https://theglobalscholarship.org/scholarships/women-in-technology-scholarship-2025?source=main#:~:text=The%20Women%20in%20Technology%20Scholarship,information%20systems%2C%20or%20related%20fields.",
     },
     {
       id: 3,
-      name: "Cybersecurity Excellence Award",
+      name: "Cybersecurity Scholarship",
       category: "Cybersecurity",
       amount: 8000,
       deadline: "2024-07-10",
@@ -43,6 +45,7 @@ export const scholarshipsData = [
         "Participation in cybersecurity competitions or projects",
         "Interest in pursuing a career in information security",
       ],
+      link:"https://niccs.cisa.gov/education-training/cybersecurity-scholarships",
     },
     {
       id: 4,
@@ -58,6 +61,7 @@ export const scholarshipsData = [
         "Experience with data analysis projects",
         "Strong mathematical and programming skills",
       ],
+      link:"https://www.indeed.com/career-advice/career-development/data-science-scholarships",
     },
     {
       id: 5,
@@ -73,10 +77,11 @@ export const scholarshipsData = [
         "Demonstrated leadership experience",
         "Strong communication skills",
       ],
+      link:"https://plaksha.edu.in/pg/tech-leaders-fellowship",
     },
     {
       id: 6,
-      name: "Software Development Merit Award",
+      name: "Software Engineering Scholarship",
       category: "Computer Science",
       amount: 6500,
       deadline: "2024-07-15",
@@ -88,6 +93,7 @@ export const scholarshipsData = [
         "Portfolio of programming projects",
         "Knowledge of multiple programming languages",
       ],
+      link:"https://www.idp.com/find-a-scholarship/software-engineering/",
     },
     {
       id: 7,
@@ -103,6 +109,7 @@ export const scholarshipsData = [
         "Experience with robotics projects or competitions",
         "Interest in pursuing a career in robotics or automation",
       ],
+      link:"https://www.mastersportal.com/search/scholarships/master/robotics",
     },
     {
       id: 8,
@@ -118,6 +125,7 @@ export const scholarshipsData = [
         "Interest in network security and infrastructure",
         "Commitment to ongoing professional development",
       ],
+      link:"https://campaigns.eccouncil.org/cyber-career-starter-scholarship",
     },
   ]
   
