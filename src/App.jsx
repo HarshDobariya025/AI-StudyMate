@@ -7,7 +7,7 @@ import Scholarship from './pages/Scholarship/Scholarship'
 import StudentAIAssistant from './pages/Home/home'
 import Courses from './pages/Courses/Courses'
 import Profile from './pages/profile'
-import Profile2 from './pages/profile2.jsx'
+import Profile2 from './pages/Profile2'
 import Resume from './pages/Resume/Resume'
 
 const App = () => {
