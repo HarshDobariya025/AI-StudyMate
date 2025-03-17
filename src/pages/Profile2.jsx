@@ -1,5 +1,5 @@
 import React from "react";
-import { useUser } from "@clerk/clerk-react";
+import { UserButton, useUser } from "@clerk/clerk-react";
 import "./Profile.css";
 
 const Profile2 = () => {
@@ -10,7 +10,9 @@ const Profile2 = () => {
   }
 
   return(
+    <>
     <div className="profile-container">
+
       <h1 className="profile-title">User Profile</h1>
       
       <div className="profile-content">
@@ -43,6 +45,7 @@ const Profile2 = () => {
         </div>
       </div>
     </div>
+    </>
   ) 
 };
 

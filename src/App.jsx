@@ -9,6 +9,7 @@ import Courses from './pages/Courses/Courses'
 import Profile from './pages/profile'
 import Profile2 from './pages/Profile2'
 import Resume from './pages/Resume/Resume'
+import Doubt from './pages/Doubt/Doubt'
 
 const App = () => {
   const { isSignedIn } = useUser();
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/courses" element={<Courses />} />
         <Route path="/profile" element={<Profile2/>} />
         <Route path="/resume" element={<Resume/>} />
+        <Route path="/doubt" element={<Doubt/>} />
       </Routes>
     </>
   )

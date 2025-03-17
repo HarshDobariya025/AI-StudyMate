@@ -11,6 +11,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import SortIcon from '@mui/icons-material/Sort';
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
+import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 import ImportContactsRoundedIcon from '@mui/icons-material/ImportContactsRounded';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import { UserButton, useUser } from "@clerk/clerk-react";
@@ -33,7 +34,7 @@ const Sidebar = () => {
         <SortIcon onClick={() => setExtended((prev) => !prev)} className="menu"/>
         <div onClick={()=>newChat()} className="new-chat">
           <AddIcon />
-          {extended ? <p>New chat</p> : null}
+          {extended ? <p className="chat">New chat</p> : null}
         </div>
         <NavLink to="/">
           <div className="bottom-item recent-entry">
@@ -45,6 +46,12 @@ const Sidebar = () => {
           <div className="bottom-item recent-entry">
             <PersonRoundedIcon />
             {extended ? <p>Account</p> : null}
+          </div>
+        </NavLink>
+        <NavLink to="/resume">
+          <div className="bottom-item recent-entry">
+            <ContactPageIcon />
+            {extended ? <p>Resume</p> : null}
           </div>
         </NavLink>
         <NavLink to="/courses">
@@ -59,10 +66,10 @@ const Sidebar = () => {
             {extended ? <p>Scholarship</p> : null}
           </div>
         </NavLink>
-        <NavLink to="/resume">
+        <NavLink to="/Doubt">
           <div className="bottom-item recent-entry">
-            <ContactPageIcon />
-            {extended ? <p>Resume</p> : null}
+            <TipsAndUpdatesIcon />
+            {extended ? <p>Doubts</p> : null}
           </div>
         </NavLink>
 

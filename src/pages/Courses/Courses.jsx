@@ -5,6 +5,7 @@ import "./Courses.css";
 
 export default function Courses() {
   return (
+    <>
     <RootLayout>
       <main className="courses-container">
         <div className="courses-content">
@@ -13,5 +14,6 @@ export default function Courses() {
         </div>
       </main>  
     </RootLayout>
+    </>
   );
 }

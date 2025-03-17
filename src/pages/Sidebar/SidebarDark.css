@@ -53,6 +53,10 @@
     animation: fadeIn 0.5s ease-in-out;
 }
 
+.sidebar .new-chat .chat{
+    padding-right: 10px;
+}
+
 .sidebar .new-chat:hover {
     background-color: #444444;
 }
