@@ -6,7 +6,7 @@ import { SignIn, SignUp, useUser } from '@clerk/clerk-react'
 import Scholarship from './pages/Scholarship/Scholarship'
 import StudentAIAssistant from './pages/Home/home'
 import Courses from './pages/Courses/Courses'
-import Profile from './pages/profile'
+import Profile from './pages/Profile'
 import Profile2 from './pages/Profile2'
 import Resume from './pages/Resume/Resume'
 import Doubt from './pages/Doubt/Doubt'
@@ -23,9 +23,10 @@ const App = () => {
         <Route path="/signup" element={<SignUp />} />
         {isSignedIn? <Route path="/" element={<Main />} /> : <Route path="/" element={<StudentAIAssistant />} />}
         <Route path="/courses" element={<Courses />} />
-        <Route path="/profile" element={<Profile2/>} />
+        <Route path="/profile" element={<Profile/>} />
         <Route path="/resume" element={<Resume/>} />
         <Route path="/doubt" element={<Doubt/>} />
+        {/* <Route path="/feedback" element={<FeedbackPage/>} /> */}
       </Routes>
     </>
   )

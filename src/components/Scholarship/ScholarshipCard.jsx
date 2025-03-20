@@ -47,15 +47,15 @@ const ScholarshipCard = ({ scholarship }) => {
           <span>{formatAmount(scholarship.amount)}</span>
         </div>
 
-        <div className="detail">
+        {/* <div className="detail">
           <Calendar size={18} />
           <span>Deadline: {formatDate(scholarship.deadline)}</span>
-        </div>
+        </div> */}
 
-        <div className={`detail deadline ${deadlineDays < 14 ? "urgent" : ""}`}>
+        {/* <div className={`detail deadline ${deadlineDays < 14 ? "urgent" : ""}`}>
           <Clock size={18} />
           <span>{deadlineDays > 0 ? `${deadlineDays} days left` : "Deadline passed"}</span>
-        </div>
+        </div> */}
       </div>
 
       <p className="scholarship-description">

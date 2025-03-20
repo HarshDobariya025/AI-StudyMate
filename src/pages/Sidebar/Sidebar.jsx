@@ -73,38 +73,43 @@ const Sidebar = () => {
           </div>
         </NavLink>
 
-            {extended ? (
-          <div className="recent">
-            <p className="recent-title">Recent Chats</p>
-            {
-              prevPrompts.map((item,index)=>{
-                return(
-                  <div onClick={()=>loadPrompt(item)} className="recent-entry">
-                    {/* <img src={assets.message_icon} alt="" /> */}
-                    <UndoIcon />
-                    <p>{item.slice(0,18)}...</p>
-                  </div>
-                )
-              })
-            }
-          </div>
-          ) : null}
+          {/* {extended ? (
+            <div className="recent">
+              <p className="recent-title">Recent Chats</p>
+              {
+                prevPrompts.map((item,index)=>{
+                  return(
+                    <div onClick={()=>loadPrompt(item)} className="recent-entry">
+                      <UndoIcon />
+                      <p>{item.slice(0,18)}...</p>
+                    </div>
+                  )
+                })
+              }
+            </div>
+          ) : null} */}
       </div>
 
       {/* ------------------------Bottom----------------------------- */}
       <div className="bottom">
-        <div className="bottom-item recent-entry">
-          <HelpOutlineIcon />
-          {extended ? <p>Help</p> : null}
-        </div>
-        <div className="bottom-item recent-entry">
-          <AccessTimeIcon />
-          {extended ? <p>Activity</p> : null}
-        </div>
-        <div className="bottom-item recent-entry">
-          <SettingsIcon />
-          {extended ? <p>Setting</p> : null}
-        </div>
+        <NavLink to="/help">
+          <div className="bottom-item recent-entry">
+            <HelpOutlineIcon />
+            {extended ? <p>Help</p> : null}
+          </div>
+        </NavLink>
+        <NavLink to="/help">
+          <div className="bottom-item recent-entry">
+            <AccessTimeIcon />
+            {extended ? <p>Feedback</p> : null}
+          </div>
+        </NavLink>
+        <NavLink to="/setting">
+          <div className="bottom-item recent-entry">
+            <SettingsIcon />
+            {extended ? <p>Settings</p> : null}
+          </div>
+        </NavLink>
         {/* <div className="bottom-item recent-entry">
           <p><UserButton/></p>
           {extended ? <p>Setting</p> : null}
