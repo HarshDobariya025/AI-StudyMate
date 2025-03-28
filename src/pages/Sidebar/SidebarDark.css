@@ -6,8 +6,6 @@
     background-color: #1e1e1e;
     padding: 25px 15px;
     animation: slideIn 0.5s ease-in-out;
-
-    
 }
 
 @keyframes slideIn {

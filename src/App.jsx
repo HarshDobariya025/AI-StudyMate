@@ -10,6 +10,8 @@ import Profile from './pages/Profile'
 import Profile2 from './pages/Profile2'
 import Resume from './pages/Resume/Resume'
 import Doubt from './pages/Doubt/Doubt'
+import Practice from './pages/Practice/Practice'
+import FeedbackForm from './pages/FeedbackForm/FeedbackForm'
 
 const App = () => {
   const { isSignedIn } = useUser();
@@ -26,7 +28,8 @@ const App = () => {
         <Route path="/profile" element={<Profile/>} />
         <Route path="/resume" element={<Resume/>} />
         <Route path="/doubt" element={<Doubt/>} />
-        {/* <Route path="/feedback" element={<FeedbackPage/>} /> */}
+        <Route path="/practice" element={<Practice/>} />
+        <Route path="/feedback" element={<FeedbackForm/>} />
       </Routes>
     </>
   )
